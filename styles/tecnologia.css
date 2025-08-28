@@ -1,0 +1,25 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; /* Faz o conteúdo ocupar o espaço restante */
+}
+
+header {
+    background: linear-gradient(to right, #007bff, #0056b3);
+}
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.carousel-inner img {
+    height: 400px; /* altura máxima */
+    object-fit: cover; /* mantém proporção e corta o excesso */
+}
