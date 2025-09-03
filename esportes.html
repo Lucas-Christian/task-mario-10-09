@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias de Esportes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/esportes.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">QueMarioNews</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Tecnologia</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="esportes.html">Esportes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="crimes.html">Crimes</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        
+        <header class="bg-success text-white text-center py-5">
+            <h1>Últimas Notícias de Esportes</h1>
+            <p>Os destaques do mundo esportivo em um só lugar</p>
+        </header>
+
+        <div id="carouselSports" class="carousel slide container my-4" data-bs-ride="carousel">
+            <div class="carousel-inner rounded">
+                <div class="carousel-item active">
+                    <a href="https://ge.globo.com/futebol/times/atletico-mg/noticia/2025/08/11/jornal-espanhol-ironiza-reinier-do-atletico-mg-por-justificar-falta-de-sequencia-no-real-madrid-surreal.ghtml" target="_blank">
+                        <img src="https://s2-ge.glbimg.com/523mMes0sHAlAVZiuaMouMIWMzo=/0x344:1692x1296/540x304/smart/filters:max_age(3600)/https://i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2025/c/H/Gb6a2FSMKLU8q637ghAw/54709766221-3cd541c76e-o.jpg"
+                             class="d-block w-100" alt="Notícia 1">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="https://ge.globo.com/gato-mestre/analises/noticia/2025/08/11/flamengo-fica-perto-de-recorde-mas-deixa-escapar-a-melhor-defesa-da-historia-do-1o-turno-compare.ghtml" target="_blank">
+                        <img src="https://s2-ge.glbimg.com/nHgzh79CBQl_oIhSqqG7iKXZauo=/0x0:3000x2000/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2025/5/Y/zu6pOUQoGD7JhwtSf2NA/dur-1025.jpg"
+                             class="d-block w-100" alt="Notícia 2">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="https://ge.globo.com/tenis/noticia/2025/08/11/queda-de-energia-derruba-transmissao-em-cincinnati-e-jogo-de-joao-fonseca-atrasa.ghtml" target="_blank">
+                        <img src="https://s2-ge.glbimg.com/m4gwNVDGKAwZ1EDd_l0ifKs_tes=/0x0:4920x3280/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2025/q/C/IWAzmZS2OkcSPqiCrwTQ/fonseca.jpg"
+                             class="d-block w-100" alt="Notícia 3">
+                    </a>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselSports" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselSports" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+        <section class="container my-5">
+        <h2 class="text-center mb-4">Classificação do Brasileirão 2025</h2>
+        <div class="table-responsive">
+            <table class="table table-striped">
+            <thead class="table-dark">
+                <tr>
+                <th>Pos</th><th>Time</th><th>Pts</th><th>J</th><th>V</th><th>E</th><th>D</th>
+                <th>GP</th><th>GC</th><th>SG</th>
+                </tr>
+            </thead>
+            <tbody id="brasileirao-table"></tbody>
+            </table>
+        </div>
+        </section>
+
+        <div class="container my-5 m-auto">
+            <div class="row" id="sports-news-list">
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 QueMarioNews - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/esportes.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+header {
+    background: linear-gradient(to right, #185f037a, #48b300b0);
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.carousel-inner img {
+    height: 400px;
+    object-fit: cover;
+}
